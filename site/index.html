@@ -5,10 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>
-    .pad{
-        padding-left: 0px;
-    }
-        
+        .pad {
+            padding-left: 0px;
+        }
+
+        .maincol {
+            color: #6133ccb6;
+            background-color:  #003366;
+        }
+        .sidecol{
+            background-color:  #CCFF33
+            
+        }
+
     </style>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -19,223 +28,239 @@
 </head>
 
 <body>
-    <div class="container-fluid pad">
-        <div class = "row ">
-        <div class="col-9 ">1</div>
-        
-            <div class="col-3">3
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-9 maincol ">1</div>
 
-        <!--Word of the Day by TheFreeDictionary.com-->
-        <div style="width:400px;position:relative;background-color:#FEFFF0;padding:4px">
-            <div style="font:bold 12pt '';color:#CC3333">Word of the Day</div>
-            <style>
-                #WordOfTheDay {
-                    width: 100%;
-                    border: 1px #FF3300 solid;
-                    background-color: #FEFFF0
-                }
+            <div class="col-3 sidecol">3
 
-                #WordOfTheDay H3 {
-                    font: bold 12pt '';
-                    color: #000000
-                }
+                <!--Word of the Day by TheFreeDictionary.com-->
+                <div style="width:300px;position:relative;background-color:#FEFFF0;padding:4px">
+                    <div style="font:bold 12pt '';color:#6133ccb6">Word of the Day</div>
+                    <style>
+                        #WordOfTheDay {
+                            width: 100%;
+                            border: 1px #2f00ff2c solid;
+                            background-color: #f0f3ff
+                        }
 
-                #WordOfTheDay TD.WoDLeft {
-                    font: bold 10pt '';
-                    color: #000000
-                }
+                        #WordOfTheDay H3 {
+                            font: bold 12pt '';
+                            color: #000000
+                        }
 
-                #WordOfTheDay TD {
-                    font: normal 10pt '';
-                    color: #000000
-                }
+                        #WordOfTheDay TD.WoDLeft {
+                            font: bold 12pt '';
+                            color: #000000
+                        }
 
-                #WordOfTheDay A {
-                    color: #CC3300
-                }
-            </style>
-            <div id="tfd_wod_div">
-                <table id="WordOfTheDay">
-                    <tr>
-                        <td colspan="2" align="center">
-                            <h3 style="margin-bottom:3pt">
-                                <a href="https://www.thefreedictionary.com/goggle" rel="nofollow">goggle</a></h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="WoDLeft" valign="top" align="right">Definition:</td>
-                        <td align="left">Look with amazement; look stupidly.</td>
-                    </tr>
-                    <tr>
-                        <td class="WoDLeft" valign="top">Synonyms:</td>
-                        <td>
-                            <a href="https://www.freethesaurus.com/gape" rel="nofollow">gape</a>,
-                            <a href="https://www.freethesaurus.com/gawk" rel="nofollow">gawk</a>,
-                            <a href="https://www.freethesaurus.com/gawp" rel="nofollow">gawp</a>
-                        </td>
-                    </tr>
-                </table>
+                        #WordOfTheDay TD {
+                            font: normal 12pt '';
+                            color: #000000
+                        }
+
+                        #WordOfTheDay A {
+                            color: #008bcc
+                        }
+                    </style>
+                    <div id="tfd_wod_div">
+                        <table id="WordOfTheDay">
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <h3 style="margin-bottom:3pt">
+                                        <a href="https://www.thefreedictionary.com/goggle" rel="nofollow">goggle</a>
+                                    </h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="WoDLeft" valign="top" align="right">Definition:</td>
+                                <td align="left">Look with amazement; look stupidly.</td>
+                            </tr>
+                            <tr>
+                                <td class="WoDLeft" valign="top">Synonyms:</td>
+                                <td>
+                                    <a href="https://www.freethesaurus.com/gape" rel="nofollow">gape</a>,
+                                    <a href="https://www.freethesaurus.com/gawk" rel="nofollow">gawk</a>,
+                                    <a href="https://www.freethesaurus.com/gawp" rel="nofollow">gawp</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <script
+                        type="text/javascript">document.getElementById("tfd_wod_div").style.visibility = "hidden"</script>
+                    <script type="text/javascript" async src="//img.tfd.com/daily/wod-top.js" charset="UTF-8"></script>
+                </div>
+                <!--end of Word of the Day-->
+                <br />
+                <!--This Day in History by TheFreeDictionary.com-->
+                <div style="width:300px;position:relative;background-color:#FEFFF0;padding:4px">
+                    <div style="font:bold 12pt '';color:#6133ccb6">This Day in History</div>
+                    <style>
+                        #TodaysHistory {
+                            width: 100%;
+                            border: 1px #2f00ff2c solid;
+                            background-color: #f0f3ff
+                        }
+
+                        #TodaysHistory H3 {
+                            margin-top: 0px;
+                            font: bold 12pt '';
+                            color: #000000
+                        }
+
+                        #TodaysHistory TD {
+                            font: normal 12pt '';
+                            color: #000000
+                        }
+
+                        #TodaysHistory A {
+                            color: #008bcc
+                        }
+                    </style>
+                    <div id=tfd_history_div></div>
+                    <script type="text/javascript" async src="//img.tfd.com/daily/history-top.js"
+                        charset="UTF-8"></script>
+                </div>
+                <!--end of This Day in History-->
+                <br />
+                <!--Today's Birthday by TheFreeDictionary.com-->
+                <div style="width:300px;position:relative;background-color:#FEFFF0;padding:4px">
+                    <div style="font:bold 12pt '';color:#6133ccb6">Today's Birthday</div>
+                    <style>
+                        #TodaysBirthday {
+                            width: 100%;
+                            border: 1px #2f00ff2c solid;
+                            background-color: #f0f3ff
+                        }
+
+                        #TodaysBirthday H3 {
+                            margin-top: 0px;
+                            font: bold 12pt '';
+                            color: #000000
+                        }
+
+                        #TodaysBirthday TD {
+                            font: normal 12pt '';
+                            color: #000000
+                        }
+
+                        #TodaysBirthday A {
+                            color: #008bcc
+                        }
+                    </style>
+                    <div id=tfd_birthday_div></div>
+                    <script type="text/javascript" async src="//img.tfd.com/daily/birthday-top.js"
+                        charset="UTF-8"></script>
+                </div>
+                <!--end of Today's Birthday-->
+                <br />
+                <!--Today's Holiday by TheFreeDictionary.com-->
+                <div style="width:300px;position:relative;background-color:#FEFFF0;padding:4px">
+                    <div style="font:bold 12pt '';color:#6133ccb6">Today's Holiday</div>
+                    <style>
+                        #TodaysHoliday {
+                            width: 100%;
+                            border: 1px #2f00ff2c solid;
+                            background-color: #f0f3ff
+                        }
+
+                        #TodaysHoliday H3 {
+                            margin-top: 0px;
+                            font: bold 12pt '';
+                            color: #000000
+                        }
+
+                        #TodaysHoliday TD {
+                            font: normal 12pt '';
+                            color: #000000
+                        }
+
+                        #TodaysHoliday A {
+                            color: #008bcc
+                        }
+                    </style>
+                    <div id=tfd_holiday_div>
+                        <table id=TodaysHoliday class=TodaysHoliday>
+                            <tr>
+                                <td>
+                                    <h3>W.C. Handy Music Festival</h3><span>The <a rel="nofollow"
+                                            href="//encyclopedia.thefreedictionary.com/W.+C.+Handy">W.C. Handy</a> Music
+                                        Festival
+                                        honors the "Father of the Blues" in the Alabama Quad-Cities of <a rel="nofollow"
+                                            href="//encyclopedia.thefreedictionary.com/Florence,+Alabama">Florence</a>,
+                                        Muscle
+                                        Shoals, Sheffield, and Tuscumbia. The festival celebrates not only Handy's
+                                        musical
+                                        heritage
+                                        but also the musical roots of <a rel="nofollow"
+                                            href="//encyclopedia.thefreedictionary.com/Spiritual+(music)">spirituals</a>
+                                        and
+                                        jazz.
+                                        Throughout the festival there is music by nationally known musicians night and
+                                        day,
+                                        street
+                                        dancing, folk art exhibits, and music workshops held in such locations as ball
+                                        fields,
+                                        parks, and nursing homes. Concerts are performed in the church where Handy's
+                                        father and
+                                        grandfather served as pastor, and in restaurants and clubs.</span>
+                                    <a href="//encyclopedia2.thefreedictionary.com/Handy+Music+Festival"
+                                        rel="nofollow"><b>More...</b></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <script
+                        type="text/javascript">document.getElementById("tfd_holiday_div").style.visibility = "hidden"</script>
+                    <script type="text/javascript" async src="//img.tfd.com/daily/holiday-top.js"
+                        charset="UTF-8"></script>
+                </div>
+                <!--end of Today's Holiday-->
+                <br />
+                <!--Quote of the Day by TheFreeDictionary.com-->
+                <div style="width:300px;position:relative;background-color:#FEFFF0;padding:4px">
+                    <div style="font:bold 12pt '';color:#6133ccb6">Quote of the Day</div>
+                    <style>
+                        #QuoteOfTheDay {
+                            width: 100%;
+                            border: 1px #2f00ff2c solid;
+                            background-color: #f0f3ff
+                        }
+
+                        #QuoteOfTheDay TD {
+                            font: normal 12pt '';
+                            color: #000000
+                        }
+
+                        #QuoteOfTheDay A {
+                            color: #008bcc
+                        }
+                    </style>
+                    <div id="tfd_quote_div">
+                        <table id="QuoteOfTheDay">
+                            <tr>
+                                <td align="left">
+                                    They are the good Samaritans that find us robbed of all our dreams by the roadside
+                                    of life,
+                                    bleeding and weeping and desolate; and such is their skill and wealth and goodness
+                                    of heart,
+                                    that they not only heal up our wounds, but restore to us the lost property of our
+                                    dreams.
+                                    <br /><b><a href="//encyclopedia2.thefreedictionary.com/le+Gallienne,+Richard"
+                                            rel="nofollow">Richard le Gallienne</a></b><br />(1866-1947)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <script
+                        type="text/javascript">document.getElementById("tfd_quote_div").style.visibility = "hidden"</script>
+                    <script async type="text/javascript" src="//img.tfd.com/daily/quote-top.js"
+                        charset="UTF-8"></script>
+                </div>
+
+                <!--end of Quote of the Day-->
             </div>
-            <script type="text/javascript">document.getElementById("tfd_wod_div").style.visibility = "hidden"</script>
-            <script type="text/javascript" async src="//img.tfd.com/daily/wod-top.js" charset="UTF-8"></script>
         </div>
-        <!--end of Word of the Day-->
-        <br />
-        <!--This Day in History by TheFreeDictionary.com-->
-        <div style="width:400px;position:relative;background-color:#FEFFF0;padding:4px">
-            <div style="font:bold 12pt '';color:#CC3333">This Day in History</div>
-            <style>
-                #TodaysHistory {
-                    width: 100%;
-                    border: 1px #FF3300 solid;
-                    background-color: #FEFFF0
-                }
-
-                #TodaysHistory H3 {
-                    margin-top: 0px;
-                    font: bold 12pt '';
-                    color: #000000
-                }
-
-                #TodaysHistory TD {
-                    font: normal 10pt '';
-                    color: #000000
-                }
-
-                #TodaysHistory A {
-                    color: #CC3300
-                }
-            </style>
-            <div id=tfd_history_div></div>
-            <script type="text/javascript" async src="//img.tfd.com/daily/history-top.js" charset="UTF-8"></script>
-        </div>
-        <!--end of This Day in History-->
-        <br />
-        <!--Today's Birthday by TheFreeDictionary.com-->
-        <div style="width:400px;position:relative;background-color:#FEFFF0;padding:4px">
-            <div style="font:bold 12pt '';color:#CC3333">Today's Birthday</div>
-            <style>
-                #TodaysBirthday {
-                    width: 100%;
-                    border: 1px #FF3300 solid;
-                    background-color: #FEFFF0
-                }
-
-                #TodaysBirthday H3 {
-                    margin-top: 0px;
-                    font: bold 12pt '';
-                    color: #000000
-                }
-
-                #TodaysBirthday TD {
-                    font: normal 10pt '';
-                    color: #000000
-                }
-
-                #TodaysBirthday A {
-                    color: #CC3300
-                }
-            </style>
-            <div id=tfd_birthday_div></div>
-            <script type="text/javascript" async src="//img.tfd.com/daily/birthday-top.js" charset="UTF-8"></script>
-        </div>
-        <!--end of Today's Birthday-->
-        <br />
-        <!--Today's Holiday by TheFreeDictionary.com-->
-        <div style="width:400px;position:relative;background-color:#FEFFF0;padding:4px">
-            <div style="font:bold 12pt '';color:#CC3333">Today's Holiday</div>
-            <style>
-                #TodaysHoliday {
-                    width: 100%;
-                    border: 1px #FF3300 solid;
-                    background-color: #FEFFF0
-                }
-
-                #TodaysHoliday H3 {
-                    margin-top: 0px;
-                    font: bold 12pt '';
-                    color: #000000
-                }
-
-                #TodaysHoliday TD {
-                    font: normal 10pt '';
-                    color: #000000
-                }
-
-                #TodaysHoliday A {
-                    color: #CC3300
-                }
-            </style>
-            <div id=tfd_holiday_div>
-                <table id=TodaysHoliday class=TodaysHoliday>
-                    <tr>
-                        <td>
-                            <h3>W.C. Handy Music Festival</h3><span>The <a rel="nofollow"
-                                    href="//encyclopedia.thefreedictionary.com/W.+C.+Handy">W.C. Handy</a> Music
-                                Festival
-                                honors the "Father of the Blues" in the Alabama Quad-Cities of <a rel="nofollow"
-                                    href="//encyclopedia.thefreedictionary.com/Florence,+Alabama">Florence</a>, Muscle
-                                Shoals, Sheffield, and Tuscumbia. The festival celebrates not only Handy's musical
-                                heritage
-                                but also the musical roots of <a rel="nofollow"
-                                    href="//encyclopedia.thefreedictionary.com/Spiritual+(music)">spirituals</a> and
-                                jazz.
-                                Throughout the festival there is music by nationally known musicians night and day,
-                                street
-                                dancing, folk art exhibits, and music workshops held in such locations as ball fields,
-                                parks, and nursing homes. Concerts are performed in the church where Handy's father and
-                                grandfather served as pastor, and in restaurants and clubs.</span>
-                            <a href="//encyclopedia2.thefreedictionary.com/Handy+Music+Festival"
-                                rel="nofollow"><b>More...</b></a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <script
-                type="text/javascript">document.getElementById("tfd_holiday_div").style.visibility = "hidden"</script>
-            <script type="text/javascript" async src="//img.tfd.com/daily/holiday-top.js" charset="UTF-8"></script>
-        </div>
-        <!--end of Today's Holiday-->
-        <br />
-        <!--Quote of the Day by TheFreeDictionary.com-->
-        <div style="width:400px;position:relative;background-color:#FEFFF0;padding:4px">
-            <div style="font:bold 12pt '';color:#CC3333">Quote of the Day</div>
-            <style>
-                #QuoteOfTheDay {
-                    width: 100%;
-                    border: 1px #FF3300 solid;
-                    background-color: #FEFFF0
-                }
-
-                #QuoteOfTheDay TD {
-                    font: normal 10pt '';
-                    color: #000000
-                }
-
-                #QuoteOfTheDay A {
-                    color: #CC3300
-                }
-            </style>
-            <div id="tfd_quote_div">
-                <table id="QuoteOfTheDay">
-                    <tr>
-                        <td align="left">
-                            They are the good Samaritans that find us robbed of all our dreams by the roadside of life,
-                            bleeding and weeping and desolate; and such is their skill and wealth and goodness of heart,
-                            that they not only heal up our wounds, but restore to us the lost property of our dreams.
-                            <br /><b><a href="//encyclopedia2.thefreedictionary.com/le+Gallienne,+Richard"
-                                    rel="nofollow">Richard le Gallienne</a></b><br />(1866-1947)</td>
-                    </tr>
-                </table>
-            </div>
-            <script type="text/javascript">document.getElementById("tfd_quote_div").style.visibility = "hidden"</script>
-            <script async type="text/javascript" src="//img.tfd.com/daily/quote-top.js" charset="UTF-8"></script>
-        </div>
-
-        <!--end of Quote of the Day-->
     </div>
-</div>
-</div>
 </body>
 </body>
 
